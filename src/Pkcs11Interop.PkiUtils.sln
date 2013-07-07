@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pkcs11Interop.PkiUtils", "Pkcs11Interop.PkiUtils\Pkcs11Interop.PkiUtils.csproj", "{D06A35F1-A15D-462F-B5B2-E5230A18BF4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pkcs11Interop.PkiUtils.Tests", "Pkcs11Interop.PkiUtils.Tests\Pkcs11Interop.PkiUtils.Tests.csproj", "{06686105-3C4A-4E3A-B762-10B67D8A5803}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06686105-3C4A-4E3A-B762-10B67D8A5803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06686105-3C4A-4E3A-B762-10B67D8A5803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06686105-3C4A-4E3A-B762-10B67D8A5803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06686105-3C4A-4E3A-B762-10B67D8A5803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D06A35F1-A15D-462F-B5B2-E5230A18BF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D06A35F1-A15D-462F-B5B2-E5230A18BF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D06A35F1-A15D-462F-B5B2-E5230A18BF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D06A35F1-A15D-462F-B5B2-E5230A18BF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Pkcs11Interop.PkiUtils\Pkcs11Interop.PkiUtils.csproj
+	EndGlobalSection
+EndGlobal
