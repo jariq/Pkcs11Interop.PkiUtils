@@ -4,12 +4,12 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("Pkcs11Interop.PkiUtils")]
+[assembly: AssemblyTitle("Pkcs11Interop.PkiUtils.Tests")]
 [assembly: AssemblyDescription("PKI extensions for Pkcs11Interop library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("JWC s.r.o.")]
-[assembly: AssemblyProduct("Pkcs11Interop.PkiUtils")]
-[assembly: AssemblyCopyright("Copyright (c) 2013 JWC s.r.o. All Rights Reserved.")]
+[assembly: AssemblyProduct("Pkcs11Interop.PkiUtils (AGPL)")]
+[assembly: AssemblyCopyright("Copyright © 2013-2014 JWC s.r.o. All Rights Reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
