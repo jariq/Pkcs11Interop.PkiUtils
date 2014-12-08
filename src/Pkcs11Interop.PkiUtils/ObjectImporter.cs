@@ -17,6 +17,7 @@ using System;
 using System.Collections.Generic;
 using Net.Pkcs11Interop.Common;
 using Net.Pkcs11Interop.HighLevelAPI;
+using Org.BouncyCastle.Asn1;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.X509;
@@ -78,7 +79,7 @@ namespace Net.Pkcs11Interop.PkiUtils
             certificateAttributes.Add(new ObjectAttribute(CKA.CKA_SUBJECT, x509Certificate.SubjectDN.GetDerEncoded()));
             certificateAttributes.Add(new ObjectAttribute(CKA.CKA_ID, privKeyAttributes[1].GetValueAsByteArray()));
             certificateAttributes.Add(new ObjectAttribute(CKA.CKA_ISSUER, x509Certificate.IssuerDN.GetDerEncoded()));
-            certificateAttributes.Add(new ObjectAttribute(CKA.CKA_SERIAL_NUMBER, x509Certificate.SerialNumber.ToByteArrayUnsigned()));
+            certificateAttributes.Add(new ObjectAttribute(CKA.CKA_SERIAL_NUMBER, new DerInteger(x509Certificate.SerialNumber).GetDerEncoded()));
             certificateAttributes.Add(new ObjectAttribute(CKA.CKA_VALUE, x509Certificate.GetEncoded()));
 
             // Create certificate object
@@ -126,7 +127,7 @@ namespace Net.Pkcs11Interop.PkiUtils
             certificateAttributes.Add(new ObjectAttribute(CKA.CKA_SUBJECT, x509Certificate.SubjectDN.GetDerEncoded()));
             certificateAttributes.Add(new ObjectAttribute(CKA.CKA_ID, ckaId));
             certificateAttributes.Add(new ObjectAttribute(CKA.CKA_ISSUER, x509Certificate.IssuerDN.GetDerEncoded()));
-            certificateAttributes.Add(new ObjectAttribute(CKA.CKA_SERIAL_NUMBER, x509Certificate.SerialNumber.ToByteArrayUnsigned()));
+            certificateAttributes.Add(new ObjectAttribute(CKA.CKA_SERIAL_NUMBER, new DerInteger(x509Certificate.SerialNumber).GetDerEncoded()));
             certificateAttributes.Add(new ObjectAttribute(CKA.CKA_VALUE, x509Certificate.GetEncoded()));
 
             // Create certificate object
